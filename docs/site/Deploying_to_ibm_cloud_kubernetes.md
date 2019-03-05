@@ -45,7 +45,7 @@ $ lb4 app
 ? Project root directory: deploy-test
 ? Application class name: DeployTestApplication
 ? Select features to enable in the project Enable tslint, Enable prettier, Enable mocha, Enable loopback
-Build, Enable vscode, Enable repositories, Enable services
+Build, Enable vscode, Disable docker, Enable repositories, Enable services
 ...
 Application deploy-test was created in deploy-test.
 Next steps:

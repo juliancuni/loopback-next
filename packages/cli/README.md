@@ -22,13 +22,22 @@ Run the following command to install the CLI.
       -h,   --help             # Print the generator's options and usage
             --skip-cache       # Do not remember prompt answers              Default: false
             --skip-install     # Do not automatically install dependencies   Default: false
+            --force-install    # Fail on install dependencies error          Default: false
             --applicationName  # Application name
+            --docker           # Include Dockerfile and .dockerignore
+            --repositories     # Include repository imports and RepositoryMixin
+            --services         # Include service-proxy imports and ServiceMixin
             --description      # Description for the application
             --outdir           # Project root directory for the application
             --tslint           # Enable tslint
             --prettier         # Enable prettier
             --mocha            # Enable mocha
             --loopbackBuild    # Use @loopback/build
+            --vscode           # Use preconfigured VSCode settings
+            --private          # Mark the project private (excluded from npm publish)
+      -c,   --config           # JSON file name or value to configure options
+      -y,   --yes              # Skip all confirmation prompts with default or provided value
+            --format           # Format generated code using npm run lint:fix
 
     Arguments:
       name  # Project name for the application  Type: String  Required: false
@@ -46,13 +55,19 @@ Run the following command to install the CLI.
       -h,   --help           # Print the generator's options and usage
             --skip-cache     # Do not remember prompt answers             Default: false
             --skip-install   # Do not automatically install dependencies  Default: false
+            --force-install  # Fail on install dependencies error         Default: false
+            --componentName  # Component name
             --description    # Description for the extension
             --outdir         # Project root directory for the extension
             --tslint         # Enable tslint
             --prettier       # Enable prettier
             --mocha          # Enable mocha
             --loopbackBuild  # Use @loopback/build
-            --componentName  # Component name
+            --vscode         # Use preconfigured VSCode settings
+            --private        # Mark the project private (excluded from npm publish)
+      -c,   --config         # JSON file name or value to configure options
+      -y,   --yes            # Skip all confirmation prompts with default or provided value
+            --format         # Format generated code using npm run lint:fix
     ```
 
 3.  To scaffold a Controller into your application
@@ -213,23 +228,23 @@ Run the following command to install the CLI.
     `lb4 --version` (or `lb4 -v`)
 
     ```sh
-    @loopback/cli version: 1.5.1
+    @loopback/cli version: 1.8.1
 
     @loopback/* dependencies:
-      - @loopback/authentication: ^1.0.10
-      - @loopback/boot: ^1.0.10
-      - @loopback/build: ^1.2.0
-      - @loopback/context: ^1.4.1
-      - @loopback/core: ^1.1.4
-      - @loopback/metadata: ^1.0.4
-      - @loopback/openapi-spec-builder: ^1.0.4
-      - @loopback/openapi-v3-types: ^1.0.4
-      - @loopback/openapi-v3: ^1.1.7
-      - @loopback/repository-json-schema: ^1.2.7
-      - @loopback/repository: ^1.1.3
-      - @loopback/rest: ^1.5.3
-      - @loopback/testlab: ^1.0.4
-      - @loopback/docs: ^1.7.1
+      - @loopback/authentication: ^1.0.14
+      - @loopback/boot: ^1.0.14
+      - @loopback/build: ^1.3.1
+      - @loopback/context: ^1.6.0
+      - @loopback/core: ^1.1.7
+      - @loopback/metadata: ^1.0.7
+      - @loopback/openapi-spec-builder: ^1.0.7
+      - @loopback/openapi-v3-types: ^1.0.7
+      - @loopback/openapi-v3: ^1.2.3
+      - @loopback/repository-json-schema: ^1.3.3
+      - @loopback/repository: ^1.1.7
+      - @loopback/rest: ^1.7.0
+      - @loopback/testlab: ^1.0.7
+      - @loopback/docs: ^1.9.1
     ```
 
 ## Contributions
